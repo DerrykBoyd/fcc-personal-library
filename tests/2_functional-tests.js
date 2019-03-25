@@ -103,7 +103,7 @@ suite('Functional Tests', function() {
       
       test('Test GET /api/books/[id] with valid id in db',  function(done){
         chai.request(server)
-          .get('/api/books/5c986e207508ef03990f65c3')
+          .get('/api/books/5c987a59aabf68043aab41ea')
           .end(function(err, res) {
             assert.equal(res.status, 200);
             assert.isObject(res.body, 'response should be an Object');
